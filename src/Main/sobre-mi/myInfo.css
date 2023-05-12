@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #e48820;
+  --secondary-color: #688db9;
+  --third-color: #c0c0c0;
+
+  --font-primary-color: #fff;
+  --font-secondary-color: #000;
+  --color-button: #cfef00;
+  --color-button-secondary: #c4e201;
+
+  --text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-info__section {
+  padding: 55px 0;
+}
+.my-info__title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--font-primary-color);
+  font-size: 26px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.my-info__subtitle {
+  text-align: center;
+  color: silver;
+}
+.my-info__description {
+  margin: 10px auto;
+  text-align: center;
+  padding: 4px;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  color: var(--font-primary-color);
+}
+.button {
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 5px 10px;
+  border-radius: 100px;
+  background: var(--color-button);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 15px;
+}
+.button:hover {
+  background: var(--color-button-secondary);
+}
+a {
+  color: var(--font-secondary-color);
+}
+.button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+.button:hover svg {
+  transform: translateX(5px);
+}
+.button:active {
+  transform: scale(0.99);
+}
+.container-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+.img__my-info {
+  width: 150px;
+  border-radius: 22px;
+}

@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #e48820;
+  --secondary-color: #688db9;
+  --third-color: #474747;
+  --font-primary-color: #fff;
+  --font-secondary-color: #000;
+  --color-button: #cfef00;
+  --color-button-secondary: #c4e201;
+
+  --text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-section {
+  /* background: linear-gradient(110deg, rgba(104,141,185,1) 0%, rgba(94,94,115,1) 42%, rgba(228,136,32,1) 79%); */
+  padding: 10px;
+}
+.section__title {
+  font-size: 26px;
+  margin: 15px auto;
+  color: var(--font-secondary-color);
+  text-align: center;
+}
+.contact__information {
+  background-color: rgba(255, 255, 255, .3);
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  padding-top: 25px;
+}
+.contact__icon {
+  width: 30px;
+}
+.contact-info__container {
+  letter-spacing: 2px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.contact__title {
+  color: var(--font-secondary-color);
+  font-weight: bold;
+}
+.contact__subtitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+.contact__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

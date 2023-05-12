@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #e48820;
+  --secondary-color: #688db9;
+  --third-color: #474747;
+  --font-primary-color: #fff;
+  --font-secondary-color: #000;
+  --color-button: #cfef00;
+  --color-button-secondary: #c4e201;
+  --try-color: #1a1919;
+
+  --text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.portfolio__section {
+  margin: 40px 0;
+}
+.section-portfolio__title {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  color: var(--font-secondary-color);
+}
+.text-content {
+  color: var(--font-secondary-color);
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+.text-content:hover svg {
+  transform: translateX(.55rem);
+  transition: .4s;
+  cursor: pointer;
+}
+.portfolios__container {
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+.portfolio__project {
+  display: flex;
+  height: auto;
+  gap: 30px;
+  padding: 10px;
+  justify-content: center;
+}
+.portfolio__content {
+  position: relative;
+  transition: all .3s;
+  width: 320px;
+  scroll-snap-align: center;
+  padding: 0 7px;
+}
+.portfolio__data {
+  padding-bottom: 30px;
+  height: auto;
+  width: 100%;
+}
+.portfolio__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 305px;
+  border-radius: 1rem;
+}
+.portfolio__title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: var(--font-secondary-color);
+}
+.portfolio__description {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: var(--font-secondary-color);
+  font-family: 'Inconsolata', monospace;
+}
+.portfolio__button {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  background-color: var(--color-button);
+  color: var(--font-secondary-color);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.portfolio__button:hover > svg {
+  transform: translateX(.45rem);
+  transition: .3s;
+}
+.portfolio__button:active > svg {
+  transform: translateX(.45rem);
+  transition: .4s;
+}
+.buttons__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.text-content {
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.detail__portfolio {
+  padding: 10px;
+  color: var(--font-secondary-color);
+  font-size: 1.2rem;
+}
