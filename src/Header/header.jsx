@@ -1,10 +1,6 @@
 import {useState} from 'react'
 import './Header.css'
 import {GiHamburgerMenu} from 'react-icons/Gi'
-import {FaUserCircle} from 'react-icons/fa'
-import {BsJournalBookmarkFill} from 'react-icons/bs'
-import {BsBookHalf} from 'react-icons/bs'
-import {BsFillPhoneVibrateFill} from 'react-icons/bs'
 export const Header = () => {
 
   const [active, setActive] = useState('navBarMenu')
@@ -38,19 +34,15 @@ export const Header = () => {
         <div className={active} id="container-menu">
           <div className="menu">
             <div className='container__iconsLinks'>
-              <FaUserCircle className='icon'/>
               <a onClick={removeNavBar} href='#Mi' className="buttons__menu">Sobre Mi</a>
             </div>
             <div className='container__iconsLinks'>
-              <BsBookHalf className='icon'/>
               <a onClick={removeNavBar} href='#portfolio' className="buttons__menu">Proyectos</a>
             </div>
-            <div className='container__iconsLinks'>
-              <BsJournalBookmarkFill className='icon'/> 
+            <div className='container__iconsLinks'> 
               <a onClick={removeNavBar} href='#about' className="buttons__menu">Curriculum</a>
             </div>
             <div className='container__iconsLinks'>
-              <BsFillPhoneVibrateFill className='icon'/>
               <a onClick={removeNavBar} href='#contact' className="buttons__menu">Contact</a>
             </div>
           </div>
