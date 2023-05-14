@@ -37,38 +37,6 @@
   font-weight: 600;
   color: var(--font-primary-color);
 }
-.button {
-  display: block;
-  cursor: pointer;
-  font-weight: 700;
-  font-family: Helvetica,"sans-serif";
-  transition: all .2s;
-  padding: 5px 10px;
-  border-radius: 100px;
-  background: var(--color-button);
-  border: 1px solid transparent;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  margin-left: 15px;
-}
-.button:hover {
-  background: var(--color-button-secondary);
-}
-a {
-  color: var(--font-secondary-color);
-}
-.button > svg {
-  width: 34px;
-  margin-left: 10px;
-  transition: transform .3s ease-in-out;
-}
-.button:hover svg {
-  transform: translateX(5px);
-}
-.button:active {
-  transform: scale(0.99);
-}
 .container-img {
   display: flex;
   justify-content: center;

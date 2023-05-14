@@ -36,16 +36,24 @@ export const Header = () => {
         </div>
 
         <div className={active} id="container-menu">
-          <ul className="menu">
-            <FaUserCircle className='icon'/>
-            <a onClick={removeNavBar} href='#Mi' className="buttons__menu">Sobre Mi</a>
-            <BsBookHalf className='icon'/>
-            <a onClick={removeNavBar} href='#portfolio' className="buttons__menu">Proyectos</a>
-            <BsJournalBookmarkFill className='icon'/> 
-            <a onClick={removeNavBar} href='#about' className="buttons__menu">Curriculum</a>
-            <BsFillPhoneVibrateFill className='icon'/>
-            <a onClick={removeNavBar} href='#contact' className="buttons__menu">Contact</a>
-          </ul>
+          <div className="menu">
+            <div className='container__iconsLinks'>
+              <FaUserCircle className='icon'/>
+              <a onClick={removeNavBar} href='#Mi' className="buttons__menu">Sobre Mi</a>
+            </div>
+            <div className='container__iconsLinks'>
+              <BsBookHalf className='icon'/>
+              <a onClick={removeNavBar} href='#portfolio' className="buttons__menu">Proyectos</a>
+            </div>
+            <div className='container__iconsLinks'>
+              <BsJournalBookmarkFill className='icon'/> 
+              <a onClick={removeNavBar} href='#about' className="buttons__menu">Curriculum</a>
+            </div>
+            <div className='container__iconsLinks'>
+              <BsFillPhoneVibrateFill className='icon'/>
+              <a onClick={removeNavBar} href='#contact' className="buttons__menu">Contact</a>
+            </div>
+          </div>
         </div>
 
       </nav>

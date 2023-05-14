@@ -12,7 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .about {
-  /* background: linear-gradient(290deg, rgba(104,141,185,1) 0%, rgba(94,94,115,1) 42%, rgba(228,136,32,1) 79%); */
+  background: linear-gradient(290deg, rgba(104,141,185,1) 0%, rgba(94,94,115,1) 42%, rgba(90,105,159, 05) 79%);
 }
 .about__container {
   display: flex;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 .about__title {
-  color: var(--font-secondary-color);
+  color: var(--font-primary-color);
   padding: 15px 0;
 }
 .about-img {
@@ -32,7 +32,7 @@
   align-items: center;
 }
 .about__description {
-  color: var(--font-secondary-color);
+  color: #c0c0c0;
   padding: 20px;
   font-size: 1.2rem;
   text-align: center;
@@ -44,7 +44,7 @@
   font-weight: 500;
   font-size: 17px;
   padding: 0.8em 1.5em 0.8em 1.2em;
-  background: linear-gradient(0deg, var(--color-button) 0%, var(--third-color) 100%);
+  background: linear-gradient(0deg, var(--color-button) 0%, var(--color-button-secondary) 100%);
   border: none;
   box-shadow: 0 0.7em 1.5em -0.5em var(--color-button-secondary);
   letter-spacing: 0.05em;

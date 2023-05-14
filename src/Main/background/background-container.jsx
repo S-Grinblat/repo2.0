@@ -1,8 +1,6 @@
 import './background-container.css'
 export const BackgroundContainer = () => {
   return(
-    <div className='body'>
-
-    </div>
+    <div className='body'></div>
   )
 }

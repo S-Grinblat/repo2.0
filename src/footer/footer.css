@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #e48820;
+  --secondary-color: #688db9;
+  --third-color: #474747;
+  --font-primary-color: #fff;
+  --font-secondary-color: #000;
+  --color-button: #829603;
+  --color-button-secondary: #ddff03;
+
+  --text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 
 .footer {
@@ -16,10 +29,14 @@
   text-align: center;
 }
 .footer__title {
+  color: var(--font-primary-color);
   margin-bottom: 5px;
-  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 24px;
 }
 .footer__subtitle {
+  color: #c0c0c0;
   font-size: 22px;
 }
 .footer__links {
@@ -33,7 +50,12 @@
   letter-spacing: 2px;
 } 
 .footer__link {
+  color: #829603;
   font-size: 1.1rem;
   font-weight: bold;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color-button-secondary);
+
+  &:hover, &:active {
+    color: var(--color-button-secondary);
+  }
 }

@@ -4,8 +4,8 @@
   --third-color: #474747;
   --font-primary-color: #fff;
   --font-secondary-color: #000;
-  --color-button: #cfef00;
-  --color-button-secondary: #c4e201;
+  --color-button: #829603;
+  --color-button-secondary: #ddff03;
 
   --text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,24 +13,24 @@
 }
 
 .contact-section {
-  /* background: linear-gradient(110deg, rgba(104,141,185,1) 0%, rgba(94,94,115,1) 42%, rgba(228,136,32,1) 79%); */
-  padding: 10px;
+  padding: 10px 0;
 }
 .section__title {
   font-size: 26px;
   margin: 15px auto;
-  color: var(--font-secondary-color);
+  color: var(--font-primary-color);
   text-align: center;
 }
 .contact__information {
-  background-color: rgba(255, 255, 255, .3);
+  background: linear-gradient(290deg, rgba(104,141,185,1) 0%, rgba(94,94,115,1) 42%, rgba(90,105,159, 05) 79%);
   text-align: center;
   border-radius: 20px;
   margin-bottom: 50px;
   padding-top: 25px;
 }
 .contact__icon {
-  width: 30px;
+  font-size: 30px;
+  color: #fff;
 }
 .contact-info__container {
   letter-spacing: 2px;
@@ -38,14 +38,28 @@
   padding-bottom: 30px;
 }
 .contact__title {
-  color: var(--font-secondary-color);
+  color: var(--font-primary-color);
   font-weight: bold;
 }
 .contact__subtitle {
   font-size: 16px;
   font-weight: 600;
+  color: #000;
 }
 .contact__footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.container-redes {
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.icons {
+  color: var(--color-button);
+  font-size: 30px;
+}
+.icons:hover, .icons:active {
+  color: var(--color-button-secondary);
+
 }

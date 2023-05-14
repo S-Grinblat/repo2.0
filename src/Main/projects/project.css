@@ -14,15 +14,15 @@
 }
 
 .portfolio__section {
-  margin: 40px 0;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .section-portfolio__title {
   font-family: 'Inconsolata', monospace;
   text-align: center;
-  color: var(--font-secondary-color);
+  color: var(--font-primary-color);
 }
 .text-content {
-  color: var(--font-secondary-color);
+  color: var(--font-primary-color);
   font-family: 'Inconsolata', monospace;
   text-align: center;
   margin: 10px auto;
@@ -69,14 +69,14 @@
   font-size: 1.4rem;
   margin: 10px 0;
   font-weight: bold;
-  color: var(--font-secondary-color);
+  color: var(--font-primary-color);
 }
 .portfolio__description {
   padding: 10px;
   font-size: 1.2rem;
   font-weight: bold;
   padding-bottom: 30px;
-  color: var(--font-secondary-color);
+  color: #c0c0c0;
   font-family: 'Inconsolata', monospace;
 }
 .portfolio__button {

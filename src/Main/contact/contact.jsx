@@ -1,20 +1,28 @@
-import phone from '../../../icons-logos/phone-call.svg'
-import message from '../../../icons-logos/message.svg'
-import location from '../../../icons-logos/location.svg'
-import instagram from '../../../icons-logos/instagramActive.svg'
-import twitter from '../../../icons-logos/twitter.svg'
-import linkedin from '../../../icons-logos/linkedin.svg'
-import gitHub from '../../../icons-logos/github.svg'
+import { useEffect } from 'react'
+import {BsFillTelephoneInboundFill} from 'react-icons/bs'
+import {AiOutlineMail} from 'react-icons/ai'
+import {ImLocation2} from 'react-icons/im'
+import {BsGithub} from 'react-icons/bs'
+import {BsTwitter} from 'react-icons/bs'
+import {BsLinkedin} from 'react-icons/bs'
+import {BsInstagram} from 'react-icons/bs'
 import './Contact.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 export const Contact = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+
   return(
-    <section className="contact-section" id="contact">
+    <section data-aos="fade-up" data-aos-duration="2500" className="contact-section" id="contact">
       <h2 className="section__title">Contacto</h2>
       <main className="contact__container">
         <div className='container-content'>
 
           <div className="contact__information">
-            <img className="contact__icon" src={phone} alt="phone"></img>
+            <BsFillTelephoneInboundFill className="contact__icon" />
             <div className="contact-info__container">
               <h3 className="contact__title">Celular :</h3>
               <span className="contact__subtitle"> (+54) 1123014038</span>
@@ -22,7 +30,7 @@ export const Contact = () => {
           </div>
 
           <div className="contact__information">
-            <img className="contact__icon" src={message} alt="message"></img>
+            <AiOutlineMail className="contact__icon" />
             <div className="contact-info__container">
               <h3 className="contact__title">Email :</h3>
               <span className="contact__subtitle">silva.santiago1185@gmail.com</span>
@@ -30,25 +38,25 @@ export const Contact = () => {
           </div>
 
           <div className="contact__information">
-            <img className="contact__icon" src={location} alt="location"></img>
+            <ImLocation2 className="contact__icon" />
             <div className="contact-info__container">
               <h3 className="contact__title">Localizacion :</h3>
               <span className="contact__subtitle">Argentina - Buenos Aires</span>
             </div>
           </div>
 
-          <div className='container-redes'>
+            <div className='container-redes'>
               <a href="https://instagram.com/s.grinblat" target="_blank" rel="noopener noreferrer">
-                <img src={instagram} className='icon'></img>
+                <BsInstagram className='icons' />
               </a>
               <a href="http://www.twitter.com/SanGrinblat" target="_blank" rel="noopener noreferrer">
-                <img src={twitter} className='icon'></img>
+                <BsTwitter className='icons'/>
               </a>
               <a href="https://www.linkedin.com/in/santiago-silva59a5b6237" target="_blank" rel="noopener noreferrer">
-                <img src={linkedin} className='icon'></img>
+                <BsLinkedin className='icons' />
               </a>
               <a href="https://github.com/S-Grinblat" target="_blank" rel="noopener noreferrer">
-                <img src={gitHub} className='icon'></img>
+              <BsGithub className='icons' />
               </a>
             </div>
 

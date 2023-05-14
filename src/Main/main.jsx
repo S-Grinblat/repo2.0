@@ -12,10 +12,5 @@ export const Main = () => {
       <About />
       <Contact />
     </>
-    // <main className="main">
-
-    //   
-    // </main>
-
   )
 }
